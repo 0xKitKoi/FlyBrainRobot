@@ -1,6 +1,10 @@
+# Ignore python virtual environment internal packages inside versions
+**/lib/python*/
+**/include/
+**/bin/
+**/share/
+**/__pycache__/
 
-venv/
-.venv/
-
-# Ignore massive connectome data files (Over GitHub limits)
+# Ignore massive data files over GitHub's limits everywhere
 *.feather
+*.npy
