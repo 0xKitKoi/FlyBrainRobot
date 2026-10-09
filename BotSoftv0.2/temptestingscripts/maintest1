@@ -1,0 +1,68 @@
+import time
+from sensors.simulator import SimulatedSensors   # replace with real IMU later
+from brain.connectome import ConnectomeBrain
+from control.behavior import BehaviorController
+from control.motor_controller import MotorController
+from control.face import render_status
+from pathlib import Path
+
+TICK_HZ = 100
+DT = 1.0 / TICK_HZ
+
+def imu_to_drive(roll_deg, base=0.175, span=0.125, clamp=0.15):
+    d = max(-1.0, min(1.0, roll_deg / 45.0)) * span
+    dl = max(base - clamp, min(base + clamp, base - d))
+    dr = max(base - clamp, min(base + clamp, base + d))
+    return dl, dr
+
+
+def main():
+    sensors = SimulatedSensors()
+    behavior = BehaviorController()
+    motors = MotorController()
+    brain = ConnectomeBrain(Path(__file__).resolve().parent / "flybrain",
+                            gain=0.003)
+
+    # warmup, then capture baseline. No second assignment.
+    brain.reset(seed=0)
+    for _ in range(1000):
+        brain.step(0.175, 0.175)
+    baseline = brain.steering()
+    print(f"[brain] baseline steering = {baseline:+.4f}")
+
+    K_SERVO = 150.0          # matches the validated -0.095..+0.306 range
+    try:
+        while True:
+            t0 = time.perf_counter()
+
+            reading = sensors.read()
+            roll = reading.get("roll_deg", 0.0)
+            dl, dr = imu_to_drive(roll)
+
+            tick = brain.step(dl, dr)
+            if tick["tripped"]:
+                reading["brain_steering"] = 0.0
+                reading["brain_tripped"] = True
+            else:
+                s = brain.steering()
+                reading["brain_steering"] = s
+                reading["brain_tripped"] = False
+
+            state = behavior.update(reading)
+            cmd = motors.command_for(state)
+
+            if not tick["tripped"]:
+                angle = 90 + max(-60.0, min(60.0, K_SERVO * (reading["brain_steering"] - baseline)))
+                cmd["servo_deg"] = angle
+
+            print(render_status(reading, state, cmd))
+
+            elapsed = time.perf_counter() - t0
+            if elapsed < DT:
+                time.sleep(DT - elapsed)
+    except KeyboardInterrupt:
+        pass
+    print("Closed. No physical hardware was controlled.")
+
+if __name__ == "__main__":
+    main()
