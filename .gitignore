@@ -1,0 +1,6 @@
+
+venv/
+.venv/
+
+# Ignore massive connectome data files (Over GitHub limits)
+*.feather
