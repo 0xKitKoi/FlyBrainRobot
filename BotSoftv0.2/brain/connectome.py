@@ -55,6 +55,27 @@ class ConnectomeBrain:
         self.left_idx = self.to_idx(h[h[side_col].isin(["L", "left", "Left"])].bodyId)
         self.right_idx = self.to_idx(h[h[side_col].isin(["R", "right", "Right"])].bodyId)
 
+        # --- thermosensory (antennal thermoreceptors) ---
+        thermo = self.annotations[self.annotations["class"] == "thermosensory"]
+        self.thermo_hot = self.to_idx(
+            thermo[thermo["type"] == "TRN_VP2"]["bodyId"])
+        self.thermo_cool = self.to_idx(
+            thermo[thermo["type"].isin(["TRN_VP3a", "TRN_VP3b"])]["bodyId"])
+        self.thermo_other = self.to_idx(
+            thermo[thermo["type"] == "TRN_VP1m"]["bodyId"])
+
+        # --- tactile (mechanosensory bristles, top 6 types) ---
+        tact_types = ["SNta02,SNta09", "SNta29", "SNta37",
+                      "SNta20", "SNta38", "SNta21"]
+        self.tactile = self.to_idx(
+            self.annotations[self.annotations["type"].isin(tact_types)]["bodyId"])
+
+        print(f"[brain] thermo hot={len(self.thermo_hot)} "
+              f"cool={len(self.thermo_cool)} other={len(self.thermo_other)}")
+        print(f"[brain] tactile={len(self.tactile)}")
+
+
+
         self.gain = gain if gain is not None else self.DEFAULT_GAIN
         
 
@@ -78,6 +99,36 @@ class ConnectomeBrain:
               f"of {len(self.out_idx)} descending)")
 
         self.reset(seed=0)
+        
+        # --- thermosensory (antennal thermoreceptors) ---
+        thermo = self.annotations[self.annotations["class"] == "thermosensory"]
+        self.thermo_hot = self.to_idx(
+            thermo[thermo["type"] == "TRN_VP2"]["bodyId"])
+        self.thermo_cool = self.to_idx(
+            thermo[thermo["type"].isin(["TRN_VP3a", "TRN_VP3b"])]["bodyId"])
+        self.thermo_other = self.to_idx(
+            thermo[thermo["type"] == "TRN_VP1m"]["bodyId"])
+
+        # --- tactile (mechanosensory bristles, top 6 types) ---
+        tact_types = ["SNta02,SNta09", "SNta29", "SNta37",
+                      "SNta20", "SNta38", "SNta21"]
+        self.tactile = self.to_idx(
+            self.annotations[self.annotations["type"].isin(tact_types)]["bodyId"])
+
+        print(f"[brain] thermo hot={len(self.thermo_hot)} "
+              f"cool={len(self.thermo_cool)} other={len(self.thermo_other)}")
+        print(f"[brain] tactile={len(self.tactile)}")
+
+        # in ConnectomeBrain.__init__, after tactile:
+        vp = self.annotations[self.annotations["type"] == "R1-R6"]
+        self.vis_L = self.to_idx(vp[vp["rootSide"] == "L"]["bodyId"])
+        self.vis_R = self.to_idx(vp[vp["rootSide"] == "R"]["bodyId"])
+        print(f"[brain] visual L={len(self.vis_L)} R={len(self.vis_R)}")
+
+        # in ConnectomeBrain.__init__, add:
+        asc = self.annotations[self.annotations["superclass"] == "ascending_neuron"]
+        self.ascending = self.to_idx(asc["bodyId"])
+        print(f"[brain] ascending: {len(self.ascending)}")
 
 
     # ------------------------------------------------------------------
@@ -108,8 +159,8 @@ class ConnectomeBrain:
     # one tick
     # ------------------------------------------------------------------
 
-    def step(self, drive_l, drive_r, gain=None):
-        """Advance the network by one tick. Returns a dict of live metrics."""
+    def step(self, drive_l, drive_r, extras=None, gain=None):
+        """One tick. extras = {idx_array: drive_value} for additional input groups."""
         g = gain if gain is not None else self.gain
 
         if self.tripped:
@@ -122,12 +173,17 @@ class ConnectomeBrain:
 
         if len(self.left_idx):
             self.v[self.left_idx] += drive_l * (
-                1 + self.DEFAULT_JITTER * self.rng.standard_normal(len(self.left_idx))
-            )
+                1 + self.DEFAULT_JITTER * self.rng.standard_normal(len(self.left_idx)))
         if len(self.right_idx):
             self.v[self.right_idx] += drive_r * (
-                1 + self.DEFAULT_JITTER * self.rng.standard_normal(len(self.right_idx))
-            )
+                1 + self.DEFAULT_JITTER * self.rng.standard_normal(len(self.right_idx)))
+
+        if extras:
+            for name, (idx, val) in extras.items():
+                if len(idx) and val != 0.0:
+                    self.v[idx] += val * (
+                        1 + self.DEFAULT_JITTER
+                        * self.rng.standard_normal(len(idx)))
 
         self.spikes = self.v >= self.DEFAULT_THRESH
         self.v[self.spikes] = 0.0
@@ -138,9 +194,8 @@ class ConnectomeBrain:
         dn_R = int(self.spikes[self.dn_R].sum())
         dn_total = dn_L + dn_R
 
-        # runaway valve: total spikes is a coarse backstop; DN count catches
-        # steering-pathway runaway before the whole network goes nonlinear.
-        over = (n_spikes > self.RUNAWAY_SPIKES_PER_TICK) or (dn_total > self.RUNAWAY_DN_PER_TICK)
+        over = (n_spikes > self.RUNAWAY_SPIKES_PER_TICK
+                or dn_total > self.RUNAWAY_DN_PER_TICK)
         if over:
             self._trip_count += 1
             if self._trip_count >= self.RUNAWAY_TRIP_TICKS:
@@ -156,12 +211,8 @@ class ConnectomeBrain:
         self.dn_L_hist.append(dn_L)
         self.dn_R_hist.append(dn_R)
 
-        return {
-            "dn_left": dn_L,
-            "dn_right": dn_R,
-            "total": n_spikes,
-            "tripped": False,
-        }
+        return {"dn_left": dn_L, "dn_right": dn_R,
+                "total": n_spikes, "tripped": False}
 
 
 
