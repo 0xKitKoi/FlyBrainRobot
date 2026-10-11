@@ -2,7 +2,7 @@
 from collections import deque
 import numpy as np
 
-WINDOW = 100 #200   # ticks, same as brain window
+WINDOW = 500#100 #200   # ticks, same as brain window
 
 class FlyBody:
     """Maps 4 descending neuron groups to 4 joints, with smoothing

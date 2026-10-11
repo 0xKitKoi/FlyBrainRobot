@@ -1,0 +1,993 @@
+[brain] thermo hot=7 cool=7 other=11
+[brain] tactile=1124
+[brain] selected DN groups: L=40 R=40 (of full L=656 R=648 of 1314 descending)
+[brain] thermo hot=7 cool=7 other=11
+[brain] tactile=1124
+[brain] visual L=501 R=892
+[brain] ascending: 1846
+[body] DNg36_a: 4 cells
+[body] DNpe004: 4 cells
+[body] DNge138: 2 cells
+[body] DNpe032: 2 cells
+[body] baseline DN rates: [1. 3. 2. 1.]
+[poke] 16 groups
+  haltere_L           103 cells
+  haltere_R           101 cells
+  tactile            1124 cells
+  thermo_hot            7 cells
+  thermo_cool           7 cells
+  visual_L            501 cells
+  visual_R            892 cells
+  ascending          1846 cells
+  DNg08                23 cells
+  DNpe008              19 cells
+  cb_intrinsic      32160 cells
+  vnc_intrinsic     13150 cells
+  bristle_SNta29      235 cells
+  bristle_SNta37      228 cells
+  bristle_SNta20      156 cells
+  bristle_SNta38      122 cells
+
+  t=  0.10 idle             joints=[  96.3  -15.9   23.6   59.7]  total= 464
+  t=  0.21 idle             joints=[  96.9  -20.5   20.3   56.9]  total= 273
+  t=  0.31 idle             joints=[  95.1  -19.8   20.7   57.6]  total= 438
+  t=  0.41 idle             joints=[  95.5  -19.4   21.3   57.7]  total= 342
+  t=  0.52 idle             joints=[  96.7  -18.6   21.4   58.7]  total= 408
+  t=  0.62 idle             joints=[  97.7  -17.9   22.2   59.0]  total= 341
+  t=  0.72 idle             joints=[  98.2  -17.4   22.5   59.2]  total= 253
+  t=  0.82 idle             joints=[  98.0  -17.5   22.3   58.9]  total= 470
+  t=  0.93 idle             joints=[  98.0  -17.2   22.8   59.1]  total= 452
+t=  1.00  POKE #  1  DNg08            drive=0.53 dur=0.26
+  t=  1.03 DNg08            joints=[  97.4  -17.4   22.5   59.2]  total= 321
+  t=  1.13 DNg08            joints=[  97.2  -17.6   22.3   59.2]  total= 516
+  t=  1.23 DNg08            joints=[  96.9  -17.1   22.4   59.2]  total= 343
+t=  1.26  end
+  t=  1.34 idle             joints=[  97.2  -17.1   22.4   59.2]  total= 331
+  t=  1.44 idle             joints=[  97.3  -16.9   22.7   59.0]  total= 450
+t=  1.52  POKE #  2  bristle_SNta37   drive=0.40 dur=0.18
+  t=  1.54 bristle_SNta37   joints=[  97.5  -16.5   22.9   58.8]  total= 436
+  t=  1.65 bristle_SNta37   joints=[  97.2  -16.9   22.6   58.7]  total= 282
+t=  1.71  end
+  t=  1.75 idle             joints=[  97.1  -17.0   22.4   58.8]  total= 363
+  t=  1.85 idle             joints=[  97.1  -17.0   22.8   58.9]  total= 328
+  t=  1.95 idle             joints=[  97.0  -16.9   22.7   58.9]  total= 434
+t=  2.04  POKE #  3  DNpe008          drive=0.57 dur=0.29
+  t=  2.05 DNpe008          joints=[  96.8  -17.0   22.4   58.8]  total= 343
+  t=  2.16 DNpe008          joints=[  96.8  -16.7   22.3   58.9]  total= 365
+  t=  2.26 DNpe008          joints=[  96.8  -17.0   22.5   58.9]  total= 332
+t=  2.33  end
+  t=  2.36 idle             joints=[  96.8  -16.9   22.4   58.9]  total= 306
+  t=  2.46 idle             joints=[  96.7  -17.0   22.3   58.8]  total= 323
+  t=  2.56 idle             joints=[  96.6  -16.9   22.2   58.7]  total= 506
+  t=  2.67 idle             joints=[  96.9  -16.8   22.4   58.7]  total= 382
+t=  2.69  POKE #  4  cb_intrinsic     drive=0.66 dur=0.13
+  t=  2.77 cb_intrinsic     joints=[  97.2  -16.8   22.4   58.8]  total= 407
+t=  2.82  end
+  t=  2.87 idle             joints=[  97.2  -16.8   22.4   58.7]  total= 296
+  t=  2.98 idle             joints=[  97.1  -16.8   22.5   58.8]  total= 379
+  t=  3.08 idle             joints=[  97.1  -16.7   22.6   58.9]  total= 442
+  t=  3.19 idle             joints=[  97.0  -16.8   22.5   59.0]  total= 276
+  t=  3.29 idle             joints=[  96.9  -16.9   22.4   59.0]  total= 304
+  t=  3.39 idle             joints=[  97.0  -16.8   22.5   59.0]  total= 289
+t=  3.40  POKE #  5  thermo_cool      drive=0.48 dur=0.10
+  t=  3.49 thermo_cool      joints=[  97.0  -16.9   22.5   58.9]  total= 377
+t=  3.50  end
+  t=  3.60 idle             joints=[  97.0  -17.0   22.7   58.9]  total=2631
+  t=  3.70 idle             joints=[  97.2  -17.1   23.2   58.9]  total=3149
+t=  3.72  POKE #  6  vnc_intrinsic    drive=0.31 dur=0.12
+  t=  3.81 vnc_intrinsic    joints=[  97.3  -17.3   23.8   58.9]  total=3487
+t=  3.84  end
+  t=  3.92 idle             joints=[  97.4  -17.4   24.5   58.9]  total=3353
+  t=  4.03 idle             joints=[  97.5  -17.7   25.2   58.9]  total=3475
+  t=  4.13 idle             joints=[  97.5  -17.7   25.9   59.0]  total=3558
+t=  4.17  TRIP #1  -- resetting
+[body] baseline DN rates: [1. 0. 1. 1.]
+t=  6.62  POKE #  7  thermo_hot       drive=0.65 dur=0.32
+  t=  6.62 thermo_hot       joints=[  96.0    3.8   30.9   65.2]  total= 390
+  t=  6.72 thermo_hot       joints=[  99.1   94.9   54.7   60.9]  total= 275
+  t=  6.82 thermo_hot       joints=[  96.5  102.9   62.2   61.3]  total= 474
+  t=  6.92 thermo_hot       joints=[  96.1  101.6   66.9   61.0]  total=2942
+t=  6.94  end
+  t=  7.03 idle             joints=[  97.0  100.1   73.7   61.1]  total=3600
+t=  7.09  POKE #  8  DNg08            drive=0.34 dur=0.12
+  t=  7.13 DNg08            joints=[  98.1  100.6   79.0   61.4]  total=3511
+t=  7.22  end
+  t=  7.24 idle             joints=[  98.1   99.9   82.6   61.6]  total=3503
+  t=  7.34 idle             joints=[  98.5   99.2   85.5   61.6]  total=3316
+t=  7.37  POKE #  9  bristle_SNta37   drive=0.59 dur=0.38
+t=  7.37  TRIP #2  -- resetting
+[body] baseline DN rates: [2. 0. 0. 0.]
+t=  9.69  POKE # 10  ascending        drive=0.41 dur=0.34
+  t=  9.69 ascending        joints=[  88.7   97.0   86.6   75.1]  total= 395
+  t=  9.79 ascending        joints=[  52.3  100.6   98.5   96.9]  total= 397
+  t=  9.90 ascending        joints=[  54.2  101.4  101.2   99.2]  total= 504
+  t= 10.00 ascending        joints=[  56.2  102.2  103.7  100.0]  total= 466
+t= 10.03  end
+  t= 10.10 idle             joints=[  57.1  103.5  102.8  100.2]  total= 240
+t= 10.19  POKE # 11  haltere_R        drive=0.69 dur=0.12
+  t= 10.20 haltere_R        joints=[  56.6  103.4  102.0  100.1]  total= 444
+  t= 10.31 haltere_R        joints=[  56.0  103.7  102.2   99.6]  total= 448
+t= 10.32  end
+  t= 10.41 idle             joints=[  56.1  103.5  102.0   99.5]  total= 322
+  t= 10.51 idle             joints=[  55.5  102.8  101.5   99.1]  total= 356
+  t= 10.61 idle             joints=[  55.4  103.2  101.1   98.8]  total= 353
+  t= 10.72 idle             joints=[  56.0  103.3  101.6   98.8]  total= 365
+t= 10.80  POKE # 12  tactile          drive=0.42 dur=0.15
+  t= 10.82 tactile          joints=[  56.5  103.8  101.7   98.9]  total= 393
+  t= 10.92 tactile          joints=[  56.4  103.6  101.6   99.0]  total= 343
+t= 10.95  end
+  t= 11.02 idle             joints=[  56.5  103.5  101.8   99.1]  total= 467
+  t= 11.13 idle             joints=[  56.5  103.4  101.7   98.9]  total= 387
+  t= 11.23 idle             joints=[  56.2  103.3  101.5   99.1]  total= 310
+  t= 11.33 idle             joints=[  56.0  103.2  101.5   99.1]  total= 338
+  t= 11.43 idle             joints=[  56.4  103.2  101.4   99.1]  total= 348
+t= 11.45  POKE # 13  ascending        drive=0.49 dur=0.12
+  t= 11.53 ascending        joints=[  56.4  103.0  101.4   99.0]  total= 316
+t= 11.58  end
+  t= 11.64 idle             joints=[  56.6  103.0  101.7   99.1]  total= 385
+t= 11.73  POKE # 14  bristle_SNta38   drive=0.68 dur=0.36
+  t= 11.74 bristle_SNta38   joints=[  56.8  102.9  101.6   99.1]  total= 297
+  t= 11.84 bristle_SNta38   joints=[  57.0  103.1  101.6   99.1]  total= 464
+  t= 11.95 bristle_SNta38   joints=[  57.0  102.8  101.7   99.0]  total= 340
+  t= 12.05 bristle_SNta38   joints=[  56.9  103.0  101.6   99.0]  total= 269
+t= 12.09  end
+  t= 12.15 idle             joints=[  56.9  103.0  101.7   99.1]  total= 439
+t= 12.24  POKE # 15  tactile          drive=0.54 dur=0.10
+  t= 12.25 tactile          joints=[  56.9  103.2  101.9   99.2]  total= 228
+t= 12.35  end
+  t= 12.35 idle             joints=[  56.9  103.1  101.8   99.2]  total= 260
+  t= 12.46 idle             joints=[  57.0  103.2  102.0   99.2]  total= 290
+t= 12.51  POKE # 16  haltere_L        drive=0.47 dur=0.22
+  t= 12.56 haltere_L        joints=[  57.1  103.0  101.9   99.1]  total= 331
+  t= 12.66 haltere_L        joints=[  56.9  103.1  101.8   99.1]  total= 456
+t= 12.74  end
+  t= 12.77 idle             joints=[  56.8  102.9  101.7   99.0]  total= 501
+t= 12.84  POKE # 17  bristle_SNta20   drive=0.38 dur=0.34
+  t= 12.87 bristle_SNta20   joints=[  56.7  102.9  101.6   99.0]  total= 396
+  t= 12.97 bristle_SNta20   joints=[  56.7  102.8  101.6   99.0]  total= 278
+  t= 13.07 bristle_SNta20   joints=[  56.6  102.7  101.4   98.9]  total= 297
+t= 13.18  end
+  t= 13.18 idle             joints=[  56.8  102.9  101.5   99.0]  total= 274
+  t= 13.28 idle             joints=[  56.8  102.9  101.5   98.9]  total= 423
+  t= 13.38 idle             joints=[  56.8  102.9  101.5   98.9]  total= 345
+  t= 13.48 idle             joints=[  56.8  102.9  101.4   98.9]  total= 397
+  t= 13.58 idle             joints=[  56.8  102.9  101.6   98.9]  total= 349
+t= 13.64  POKE # 18  vnc_intrinsic    drive=0.42 dur=0.38
+  t= 13.69 vnc_intrinsic    joints=[  56.7  102.9  101.5   98.9]  total= 449
+  t= 13.79 vnc_intrinsic    joints=[  56.8  103.0  101.5   98.9]  total= 302
+  t= 13.89 vnc_intrinsic    joints=[  56.8  102.9  101.5   98.9]  total= 407
+  t= 13.99 vnc_intrinsic    joints=[  56.8  102.9  101.6   98.9]  total= 245
+t= 14.03  end
+  t= 14.09 idle             joints=[  56.8  103.0  101.6   98.9]  total= 240
+  t= 14.19 idle             joints=[  56.8  102.9  101.6   98.9]  total= 414
+  t= 14.29 idle             joints=[  56.9  102.9  101.6   98.9]  total= 337
+  t= 14.39 idle             joints=[  56.9  103.0  101.7   99.0]  total= 359
+  t= 14.50 idle             joints=[  57.0  103.0  101.6   99.0]  total= 324
+  t= 14.60 idle             joints=[  57.0  103.0  101.6   99.1]  total= 356
+t= 14.62  POKE # 19  bristle_SNta38   drive=0.48 dur=0.35
+  t= 14.70 bristle_SNta38   joints=[  56.9  103.0  101.5   99.1]  total= 357
+  t= 14.80 bristle_SNta38   joints=[  56.8  103.0  101.7   99.1]  total= 287
+  t= 14.90 bristle_SNta38   joints=[  56.9  103.0  101.7   99.2]  total= 367
+t= 14.97  end
+  t= 15.00 idle             joints=[  56.9  103.1  101.6   99.2]  total= 302
+  t= 15.10 idle             joints=[  56.8  103.1  101.6   99.1]  total= 501
+t= 15.20  POKE # 20  haltere_L        drive=0.54 dur=0.39
+  t= 15.20 haltere_L        joints=[  56.8  103.1  101.6   99.1]  total= 347
+  t= 15.31 haltere_L        joints=[  56.8  103.1  101.7   99.1]  total= 364
+  t= 15.41 haltere_L        joints=[  56.9  103.1  101.7   99.2]  total= 327
+  t= 15.51 haltere_L        joints=[  56.8  103.1  101.7   99.2]  total= 407
+t= 15.59  end
+  t= 15.62 idle             joints=[  56.9  103.0  101.7   99.2]  total= 395
+  t= 15.72 idle             joints=[  57.0  103.1  101.9   99.3]  total= 498
+  t= 15.82 idle             joints=[  56.9  103.0  101.7   99.3]  total= 409
+  t= 15.93 idle             joints=[  56.8  102.9  101.7   99.2]  total= 337
+t= 15.95  POKE # 21  bristle_SNta37   drive=0.36 dur=0.26
+  t= 16.03 bristle_SNta37   joints=[  56.8  102.9  101.7   99.1]  total= 364
+  t= 16.13 bristle_SNta37   joints=[  56.8  102.9  101.7   99.0]  total= 377
+t= 16.22  end
+  t= 16.24 idle             joints=[  56.7  103.0  101.7   99.0]  total= 408
+  t= 16.34 idle             joints=[  56.8  102.9  101.7   98.9]  total= 438
+  t= 16.44 idle             joints=[  56.8  103.0  101.6   98.9]  total= 316
+  t= 16.54 idle             joints=[  56.6  102.9  101.8   98.9]  total= 241
+  t= 16.64 idle             joints=[  56.8  103.0  101.8   98.9]  total= 329
+t= 16.75  POKE # 22  bristle_SNta37   drive=0.65 dur=0.26
+  t= 16.75 bristle_SNta37   joints=[  56.8  103.0  101.7   99.0]  total= 433
+  t= 16.85 bristle_SNta37   joints=[  56.7  103.2  101.7   99.0]  total= 412
+  t= 16.95 bristle_SNta37   joints=[  56.6  103.2  101.8   99.0]  total= 370
+t= 17.01  end
+  t= 17.05 idle             joints=[  56.7  103.4  101.9   99.1]  total= 291
+  t= 17.15 idle             joints=[  56.8  103.3  101.9   99.2]  total= 435
+  t= 17.25 idle             joints=[  56.8  103.4  102.0   99.2]  total= 389
+  t= 17.35 idle             joints=[  56.8  103.3  101.9   99.2]  total= 397
+t= 17.37  POKE # 23  bristle_SNta37   drive=0.46 dur=0.17
+  t= 17.45 bristle_SNta37   joints=[  56.8  103.3  101.8   99.2]  total= 393
+t= 17.54  end
+  t= 17.55 idle             joints=[  56.7  103.2  101.8   99.2]  total= 428
+  t= 17.66 idle             joints=[  56.7  103.3  101.8   99.2]  total= 404
+  t= 17.76 idle             joints=[  56.8  103.2  101.8   99.2]  total= 347
+  t= 17.86 idle             joints=[  56.8  103.3  101.8   99.3]  total= 460
+  t= 17.96 idle             joints=[  56.8  103.4  101.9   99.3]  total= 385
+t= 18.04  POKE # 24  thermo_cool      drive=0.65 dur=0.13
+  t= 18.06 thermo_cool      joints=[  56.9  103.4  101.9   99.3]  total= 384
+  t= 18.16 thermo_cool      joints=[  57.0  103.6  102.1   99.3]  total= 504
+t= 18.17  end
+  t= 18.26 idle             joints=[  57.0  103.4  102.3   99.3]  total=2750
+  t= 18.37 idle             joints=[  57.1  103.3  102.9   99.4]  total=3299
+t= 18.39  POKE # 25  cb_intrinsic     drive=0.53 dur=0.40
+  t= 18.48 cb_intrinsic     joints=[  57.2  103.2  103.5   99.4]  total=3618
+  t= 18.59 cb_intrinsic     joints=[  57.3  103.2  104.1   99.4]  total=3498
+  t= 18.70 cb_intrinsic     joints=[  57.4  103.0  104.6   99.4]  total=3499
+t= 18.76  TRIP #3  -- resetting
+[body] baseline DN rates: [2. 1. 0. 0.]
+t= 20.97  POKE # 26  tactile          drive=0.66 dur=0.22
+  t= 20.97 tactile          joints=[  55.9   92.3  101.9   97.6]  total= 460
+  t= 21.07 tactile          joints=[  62.9   58.7  102.1  103.4]  total= 297
+  t= 21.18 tactile          joints=[  58.5   59.7  100.9  102.0]  total= 453
+t= 21.20  end
+  t= 21.28 idle             joints=[  57.4   60.0  100.8  100.2]  total= 325
+  t= 21.38 idle             joints=[  56.4   60.7  101.8   99.3]  total= 432
+  t= 21.49 idle             joints=[  57.6   61.2  102.2   99.0]  total= 390
+  t= 21.59 idle             joints=[  58.6   62.9  103.1   99.0]  total= 429
+t= 21.62  POKE # 27  haltere_L        drive=0.66 dur=0.13
+  t= 21.69 haltere_L        joints=[  58.7   63.8  103.3   99.6]  total= 345
+t= 21.76  end
+  t= 21.80 idle             joints=[  57.8   64.0  103.5   99.4]  total= 460
+  t= 21.90 idle             joints=[  57.6   63.5  103.2   99.5]  total= 303
+  t= 22.00 idle             joints=[  57.8   63.7  102.7   99.1]  total= 300
+  t= 22.10 idle             joints=[  58.1   63.4  102.4   99.1]  total= 322
+t= 22.15  POKE # 28  ascending        drive=0.60 dur=0.23
+  t= 22.21 ascending        joints=[  57.9   63.3  102.4   99.1]  total= 399
+  t= 22.31 ascending        joints=[  58.0   63.2  102.7   99.4]  total= 500
+t= 22.38  end
+  t= 22.41 idle             joints=[  58.3   63.3  102.4   99.5]  total= 402
+  t= 22.51 idle             joints=[  58.4   63.1  102.4   99.6]  total= 362
+t= 22.60  POKE # 29  visual_L         drive=0.54 dur=0.30
+  t= 22.61 visual_L         joints=[  58.5   63.1  102.2   99.6]  total= 350
+  t= 22.71 visual_L         joints=[  58.4   63.2  102.5   99.6]  total= 391
+  t= 22.82 visual_L         joints=[  58.2   62.9  102.4   99.6]  total= 370
+t= 22.91  end
+  t= 22.92 idle             joints=[  58.0   63.1  102.3   99.4]  total= 413
+  t= 23.02 idle             joints=[  57.9   63.0  102.4   99.4]  total= 392
+  t= 23.12 idle             joints=[  57.8   63.0  102.7   99.4]  total= 285
+  t= 23.23 idle             joints=[  57.5   62.9  102.6   99.3]  total= 284
+  t= 23.33 idle             joints=[  57.3   62.8  102.4   99.2]  total= 357
+t= 23.41  POKE # 30  tactile          drive=0.63 dur=0.18
+  t= 23.43 tactile          joints=[  57.1   63.0  102.3   99.4]  total= 313
+  t= 23.53 tactile          joints=[  56.7   62.8  102.1   99.2]  total= 419
+t= 23.59  end
+  t= 23.63 idle             joints=[  56.6   62.8  101.9   99.1]  total= 384
+  t= 23.73 idle             joints=[  56.4   62.9  102.0   99.2]  total= 343
+  t= 23.83 idle             joints=[  56.6   63.0  102.1   99.1]  total= 376
+t= 23.85  POKE # 31  bristle_SNta37   drive=0.47 dur=0.19
+  t= 23.94 bristle_SNta37   joints=[  56.5   63.1  102.0   99.2]  total= 360
+  t= 24.04 bristle_SNta37   joints=[  56.5   63.2  102.2   99.2]  total= 375
+t= 24.06  end
+  t= 24.14 idle             joints=[  56.5   63.1  102.1   99.0]  total= 288
+  t= 24.24 idle             joints=[  56.5   63.1  102.0   99.0]  total= 425
+t= 24.29  POKE # 32  bristle_SNta20   drive=0.57 dur=0.31
+  t= 24.34 bristle_SNta20   joints=[  56.5   63.2  102.1   98.9]  total= 297
+  t= 24.44 bristle_SNta20   joints=[  56.6   63.3  102.1   99.1]  total= 407
+  t= 24.54 bristle_SNta20   joints=[  56.8   63.3  102.2   99.1]  total= 341
+t= 24.60  end
+  t= 24.64 idle             joints=[  56.8   63.2  102.3   99.1]  total= 375
+  t= 24.75 idle             joints=[  56.8   63.2  102.2   99.0]  total= 315
+  t= 24.85 idle             joints=[  56.8   63.2  102.2   99.0]  total= 380
+  t= 24.95 idle             joints=[  56.7   63.3  102.3   99.0]  total= 525
+  t= 25.05 idle             joints=[  56.8   63.3  102.3   99.0]  total= 360
+t= 25.09  POKE # 33  bristle_SNta37   drive=0.40 dur=0.16
+  t= 25.15 bristle_SNta37   joints=[  56.7   63.3  102.3   99.0]  total= 274
+t= 25.25  end
+  t= 25.25 idle             joints=[  56.7   63.2  102.3   99.0]  total= 297
+  t= 25.35 idle             joints=[  56.6   63.3  102.3   99.0]  total= 328
+  t= 25.46 idle             joints=[  56.7   63.3  102.4   98.9]  total= 368
+t= 25.55  POKE # 34  vnc_intrinsic    drive=0.55 dur=0.15
+  t= 25.56 vnc_intrinsic    joints=[  56.8   63.2  102.4   98.9]  total= 385
+  t= 25.66 vnc_intrinsic    joints=[  56.9   63.3  102.5   99.0]  total= 425
+t= 25.70  end
+  t= 25.76 idle             joints=[  57.0   63.3  102.6   99.0]  total= 407
+t= 25.82  POKE # 35  visual_R         drive=0.68 dur=0.12
+  t= 25.86 visual_R         joints=[  57.2   63.3  102.7   99.0]  total= 403
+t= 25.95  end
+  t= 25.97 idle             joints=[  57.2   63.4  102.6   99.0]  total= 228
+  t= 26.07 idle             joints=[  57.3   63.4  102.6   98.9]  total= 348
+  t= 26.17 idle             joints=[  57.2   63.6  102.6   98.9]  total= 385
+  t= 26.27 idle             joints=[  57.2   63.7  102.6   98.9]  total= 251
+t= 26.31  POKE # 36  cb_intrinsic     drive=0.65 dur=0.28
+  t= 26.38 cb_intrinsic     joints=[  57.1   63.7  102.7   98.9]  total= 340
+  t= 26.48 cb_intrinsic     joints=[  57.3   63.6  102.5   98.8]  total= 283
+  t= 26.58 cb_intrinsic     joints=[  57.2   63.7  102.5   98.8]  total= 461
+t= 26.59  end
+  t= 26.69 idle             joints=[  57.1   63.5  102.4   98.8]  total= 485
+  t= 26.79 idle             joints=[  57.0   63.3  102.3   98.7]  total= 429
+  t= 26.90 idle             joints=[  57.0   63.3  102.2   98.7]  total= 398
+  t= 27.00 idle             joints=[  57.0   63.4  102.3   98.7]  total= 455
+t= 27.09  POKE # 37  bristle_SNta29   drive=0.39 dur=0.39
+  t= 27.10 bristle_SNta29   joints=[  56.9   63.3  102.4   98.7]  total= 292
+  t= 27.20 bristle_SNta29   joints=[  56.8   63.4  102.4   98.6]  total= 283
+  t= 27.31 bristle_SNta29   joints=[  56.7   63.3  102.4   98.6]  total= 307
+  t= 27.41 bristle_SNta29   joints=[  56.8   63.4  102.4   98.5]  total= 374
+t= 27.48  end
+  t= 27.51 idle             joints=[  56.8   63.4  102.4   98.5]  total= 386
+  t= 27.61 idle             joints=[  56.7   63.6  102.5   98.5]  total= 402
+  t= 27.71 idle             joints=[  56.7   63.6  102.5   98.5]  total= 304
+t= 27.72  POKE # 38  haltere_R        drive=0.35 dur=0.13
+  t= 27.82 haltere_R        joints=[  56.7   63.6  102.4   98.5]  total= 408
+t= 27.87  end
+  t= 27.92 idle             joints=[  56.8   63.7  102.5   98.5]  total= 433
+t= 28.00  POKE # 39  bristle_SNta20   drive=0.32 dur=0.32
+  t= 28.02 bristle_SNta20   joints=[  56.8   63.6  102.5   98.5]  total= 349
+  t= 28.13 bristle_SNta20   joints=[  56.9   63.6  102.5   98.5]  total= 273
+  t= 28.23 bristle_SNta20   joints=[  56.8   63.5  102.3   98.5]  total= 286
+t= 28.32  end
+  t= 28.33 idle             joints=[  56.8   63.6  102.3   98.5]  total= 297
+  t= 28.44 idle             joints=[  56.9   63.5  102.4   98.5]  total= 301
+  t= 28.54 idle             joints=[  56.9   63.5  102.5   98.5]  total= 476
+  t= 28.64 idle             joints=[  57.1   63.5  102.6   98.6]  total= 455
+  t= 28.75 idle             joints=[  57.3   63.5  102.7   98.7]  total= 387
+t= 28.82  POKE # 40  haltere_R        drive=0.35 dur=0.16
+  t= 28.85 haltere_R        joints=[  57.5   63.6  102.7   98.6]  total= 403
+  t= 28.95 haltere_R        joints=[  57.4   63.5  102.6   98.7]  total= 325
+t= 28.98  end
+  t= 29.06 idle             joints=[  57.5   63.5  102.7   98.6]  total= 439
+  t= 29.16 idle             joints=[  57.5   63.4  102.6   98.6]  total= 481
+  t= 29.26 idle             joints=[  57.6   63.5  102.6   98.8]  total= 457
+  t= 29.37 idle             joints=[  57.6   63.5  102.8   98.7]  total= 335
+  t= 29.47 idle             joints=[  57.5   63.4  102.7   98.7]  total= 366
+t= 29.58  POKE # 41  visual_R         drive=0.36 dur=0.24
+  t= 29.58 visual_R         joints=[  57.4   63.3  102.7   98.6]  total= 224
+  t= 29.68 visual_R         joints=[  57.1   63.2  102.5   98.6]  total= 431
+  t= 29.78 visual_R         joints=[  57.1   63.4  102.3   98.6]  total= 211
+t= 29.82  end
+  t= 29.89 idle             joints=[  57.2   63.4  102.4   98.6]  total= 304
+  t= 29.99 idle             joints=[  57.2   63.3  102.5   98.6]  total= 284
+  t= 30.09 idle             joints=[  57.2   63.2  102.3   98.6]  total= 358
+  t= 30.20 idle             joints=[  57.1   63.2  102.2   98.6]  total= 315
+  t= 30.30 idle             joints=[  57.2   63.1  102.1   98.6]  total= 324
+t= 30.32  POKE # 42  bristle_SNta37   drive=0.32 dur=0.25
+  t= 30.40 bristle_SNta37   joints=[  57.2   63.3  102.2   98.6]  total= 364
+  t= 30.51 bristle_SNta37   joints=[  57.3   63.3  102.2   98.6]  total= 398
+t= 30.58  end
+  t= 30.61 idle             joints=[  57.3   63.2  102.1   98.7]  total= 325
+  t= 30.72 idle             joints=[  57.1   63.2  101.9   98.7]  total= 370
+  t= 30.82 idle             joints=[  57.0   63.2  101.9   98.7]  total= 317
+  t= 30.92 idle             joints=[  56.8   63.1  101.7   98.6]  total= 301
+  t= 31.03 idle             joints=[  56.6   63.0  101.7   98.6]  total= 281
+  t= 31.13 idle             joints=[  56.4   62.9  101.7   98.6]  total= 387
+t= 31.16  POKE # 43  cb_intrinsic     drive=0.36 dur=0.31
+  t= 31.23 cb_intrinsic     joints=[  56.4   62.9  101.7   98.7]  total= 381
+  t= 31.34 cb_intrinsic     joints=[  56.4   62.9  101.7   98.6]  total= 416
+  t= 31.44 cb_intrinsic     joints=[  56.5   62.8  101.7   98.6]  total= 360
+t= 31.47  end
+  t= 31.54 idle             joints=[  56.4   62.8  101.7   98.6]  total= 361
+  t= 31.65 idle             joints=[  56.3   63.0  101.7   98.7]  total= 314
+t= 31.70  POKE # 44  thermo_cool      drive=0.60 dur=0.31
+  t= 31.75 thermo_cool      joints=[  56.3   62.9  101.8   98.7]  total= 561
+  t= 31.85 thermo_cool      joints=[  56.4   63.0  102.0   98.7]  total=1000
+  t= 31.96 thermo_cool      joints=[  56.6   63.0  102.4   98.8]  total=3075
+t= 32.01  end
+  t= 32.07 idle             joints=[  56.6   62.8  103.1   98.9]  total=3350
+  t= 32.18 idle             joints=[  56.6   62.6  103.7   98.9]  total=3450
+t= 32.19  POKE # 45  bristle_SNta20   drive=0.48 dur=0.39
+  t= 32.28 bristle_SNta20   joints=[  56.7   62.5  104.2   99.0]  total=3575
+  t= 32.38 bristle_SNta20   joints=[  56.7   62.4  104.9   99.0]  total=3333
+t= 32.44  TRIP #4  -- resetting
+[body] baseline DN rates: [1. 0. 0. 0.]
+t= 34.88  POKE # 46  haltere_R        drive=0.53 dur=0.34
+  t= 34.88 haltere_R        joints=[  71.5   67.8  110.2   97.3]  total= 354
+  t= 34.99 haltere_R        joints=[  92.3   99.4  103.8   99.1]  total= 365
+  t= 35.09 haltere_R        joints=[  93.2  102.4  102.1   99.5]  total= 320
+  t= 35.20 haltere_R        joints=[  94.3  103.5  101.4   99.9]  total= 339
+t= 35.24  end
+  t= 35.30 idle             joints=[  93.5  102.5  102.1   99.2]  total= 378
+  t= 35.40 idle             joints=[  94.0  102.9  101.9   98.9]  total= 312
+  t= 35.51 idle             joints=[  94.8  103.3  102.2   99.2]  total= 386
+  t= 35.61 idle             joints=[  95.3  103.5  103.1   99.6]  total= 378
+  t= 35.71 idle             joints=[  95.4  103.9  102.8   99.8]  total= 425
+t= 35.76  POKE # 47  bristle_SNta37   drive=0.37 dur=0.36
+  t= 35.82 bristle_SNta37   joints=[  95.0  103.7  102.7   99.5]  total= 334
+  t= 35.92 bristle_SNta37   joints=[  95.7  103.8  102.8   99.3]  total= 313
+  t= 36.02 bristle_SNta37   joints=[  95.7  103.7  102.7   99.4]  total= 424
+t= 36.13  end
+  t= 36.13 idle             joints=[  95.7  103.6  102.6   99.1]  total= 372
+  t= 36.23 idle             joints=[  95.4  103.7  102.6   99.3]  total= 468
+  t= 36.33 idle             joints=[  95.0  103.8  102.6   99.3]  total= 288
+  t= 36.44 idle             joints=[  95.1  103.7  102.3   99.3]  total= 376
+t= 36.48  POKE # 48  bristle_SNta20   drive=0.35 dur=0.25
+  t= 36.54 bristle_SNta20   joints=[  95.4  103.6  102.2   99.4]  total= 274
+  t= 36.64 bristle_SNta20   joints=[  95.3  103.8  102.4   99.6]  total= 287
+t= 36.74  end
+  t= 36.75 idle             joints=[  95.2  103.6  102.3   99.4]  total= 342
+  t= 36.85 idle             joints=[  95.2  103.9  102.3   99.4]  total= 262
+  t= 36.96 idle             joints=[  94.8  103.6  102.3   99.1]  total= 445
+t= 36.97  POKE # 49  bristle_SNta37   drive=0.56 dur=0.18
+  t= 37.06 bristle_SNta37   joints=[  94.8  103.6  102.2   99.1]  total= 363
+t= 37.15  end
+  t= 37.16 idle             joints=[  95.0  103.5  102.1   99.0]  total= 300
+  t= 37.27 idle             joints=[  95.0  103.6  102.0   99.1]  total= 257
+  t= 37.37 idle             joints=[  95.1  103.5  101.9   99.0]  total= 284
+  t= 37.47 idle             joints=[  95.2  103.4  102.0   99.0]  total= 464
+  t= 37.58 idle             joints=[  95.4  103.4  102.0   98.9]  total= 439
+t= 37.66  POKE # 50  haltere_R        drive=0.53 dur=0.33
+  t= 37.68 haltere_R        joints=[  95.5  103.5  101.9   99.0]  total= 390
+  t= 37.78 haltere_R        joints=[  95.5  103.7  102.1   99.0]  total= 452
+  t= 37.89 haltere_R        joints=[  95.6  103.6  102.2   99.1]  total= 287
+t= 37.99  end
+  t= 37.99 idle             joints=[  95.7  103.8  102.0   99.0]  total= 356
+  t= 38.09 idle             joints=[  96.0  103.8  102.2   98.9]  total= 339
+  t= 38.20 idle             joints=[  96.1  103.7  102.1   99.0]  total= 524
+  t= 38.30 idle             joints=[  95.9  103.8  102.0   98.9]  total= 403
+  t= 38.40 idle             joints=[  95.9  103.6  102.1   98.9]  total= 368
+  t= 38.51 idle             joints=[  96.0  103.7  102.1   98.9]  total= 313
+t= 38.58  POKE # 51  tactile          drive=0.51 dur=0.31
+  t= 38.61 tactile          joints=[  96.1  103.6  102.1   98.9]  total= 441
+  t= 38.72 tactile          joints=[  96.2  103.6  102.1   99.0]  total= 336
+  t= 38.82 tactile          joints=[  96.2  103.7  102.2   99.0]  total= 414
+t= 38.89  end
+  t= 38.92 idle             joints=[  96.1  103.7  102.1   99.0]  total= 392
+  t= 39.03 idle             joints=[  96.1  103.7  102.2   99.0]  total= 434
+  t= 39.13 idle             joints=[  96.1  103.6  102.2   99.0]  total= 489
+  t= 39.24 idle             joints=[  96.1  103.8  102.3   99.1]  total= 366
+t= 39.33  POKE # 52  haltere_R        drive=0.35 dur=0.26
+  t= 39.34 haltere_R        joints=[  96.1  103.7  102.3   99.1]  total= 291
+  t= 39.44 haltere_R        joints=[  96.1  103.7  102.4   99.2]  total= 322
+  t= 39.55 haltere_R        joints=[  96.1  103.8  102.3   99.1]  total= 346
+t= 39.59  end
+  t= 39.65 idle             joints=[  96.0  103.6  102.1   99.1]  total= 350
+  t= 39.75 idle             joints=[  96.0  103.6  102.2   99.1]  total= 284
+  t= 39.86 idle             joints=[  96.1  103.6  102.2   99.1]  total= 391
+  t= 39.96 idle             joints=[  96.2  103.7  102.3   99.1]  total= 700
+  t= 40.06 idle             joints=[  96.3  103.7  102.3   99.2]  total= 318
+t= 40.10  POKE # 53  haltere_L        drive=0.33 dur=0.19
+  t= 40.17 haltere_L        joints=[  96.4  103.7  102.3   99.1]  total= 438
+  t= 40.27 haltere_L        joints=[  96.4  103.7  102.2   99.1]  total= 362
+t= 40.31  end
+  t= 40.37 idle             joints=[  96.5  103.7  102.2   99.0]  total= 387
+  t= 40.47 idle             joints=[  96.5  103.7  102.2   99.1]  total= 437
+t= 40.58  POKE # 54  thermo_hot       drive=0.41 dur=0.31
+  t= 40.58 thermo_hot       joints=[  96.5  103.7  102.2   99.1]  total= 381
+  t= 40.68 thermo_hot       joints=[  96.4  103.7  102.2   99.1]  total= 382
+  t= 40.79 thermo_hot       joints=[  96.4  103.6  102.1   99.0]  total= 980
+t= 40.89  end
+  t= 40.89 idle             joints=[  96.4  103.5  102.4   98.9]  total=2986
+  t= 41.00 idle             joints=[  96.6  103.5  103.0   98.9]  total=3517
+  t= 41.11 idle             joints=[  96.5  103.2  103.7   99.0]  total=3383
+  t= 41.21 idle             joints=[  96.5  103.2  104.2   99.0]  total=3357
+  t= 41.32 idle             joints=[  96.6  103.1  104.7   99.0]  total=3427
+t= 41.35  POKE # 55  visual_L         drive=0.53 dur=0.21
+t= 41.38  TRIP #5  -- resetting
+[body] baseline DN rates: [1. 1. 1. 0.]
+t= 43.87  POKE # 56  bristle_SNta29   drive=0.43 dur=0.26
+  t= 43.87 bristle_SNta29   joints=[  95.3  100.4   94.0   97.3]  total= 393
+  t= 43.97 bristle_SNta29   joints=[  90.6   62.7   69.4   97.5]  total= 281
+  t= 44.07 bristle_SNta29   joints=[  94.0   63.8   63.5   98.1]  total= 305
+t= 44.14  end
+  t= 44.18 idle             joints=[  93.4   63.8   61.5   97.9]  total= 398
+  t= 44.28 idle             joints=[  93.3   63.3   61.3   98.0]  total= 351
+  t= 44.39 idle             joints=[  95.5   64.0   62.4   98.6]  total= 470
+  t= 44.49 idle             joints=[  95.8   64.5   62.6   98.6]  total= 416
+t= 44.51  POKE # 57  bristle_SNta20   drive=0.44 dur=0.18
+  t= 44.60 bristle_SNta20   joints=[  95.6   64.4   62.4   98.1]  total= 261
+t= 44.70  end
+  t= 44.70 idle             joints=[  94.9   64.1   62.3   97.9]  total= 452
+  t= 44.80 idle             joints=[  94.7   63.6   62.2   98.1]  total= 473
+t= 44.82  POKE # 58  cb_intrinsic     drive=0.44 dur=0.38
+  t= 44.91 cb_intrinsic     joints=[  94.8   63.5   61.9   98.1]  total= 288
+  t= 45.01 cb_intrinsic     joints=[  95.2   63.2   61.8   98.2]  total= 368
+  t= 45.11 cb_intrinsic     joints=[  95.2   62.9   61.6   98.1]  total= 339
+t= 45.21  end
+  t= 45.22 idle             joints=[  95.1   62.8   61.5   98.2]  total= 352
+  t= 45.32 idle             joints=[  95.6   63.0   61.5   98.3]  total= 318
+  t= 45.43 idle             joints=[  95.4   63.0   61.7   98.4]  total= 338
+  t= 45.53 idle             joints=[  95.4   62.9   61.6   98.3]  total= 359
+t= 45.54  POKE # 59  bristle_SNta29   drive=0.67 dur=0.39
+  t= 45.63 bristle_SNta29   joints=[  95.4   62.9   61.5   98.3]  total= 396
+  t= 45.74 bristle_SNta29   joints=[  95.5   62.9   61.6   98.5]  total= 293
+  t= 45.84 bristle_SNta29   joints=[  95.6   63.1   61.6   98.4]  total= 429
+t= 45.93  end
+  t= 45.94 idle             joints=[  95.6   63.2   61.5   98.4]  total= 359
+  t= 46.05 idle             joints=[  95.8   63.3   61.7   98.5]  total= 407
+  t= 46.15 idle             joints=[  95.8   63.1   61.9   98.4]  total= 344
+  t= 46.26 idle             joints=[  95.7   63.0   61.8   98.4]  total= 345
+  t= 46.36 idle             joints=[  95.8   63.1   61.7   98.4]  total= 410
+t= 46.41  POKE # 60  vnc_intrinsic    drive=0.55 dur=0.37
+  t= 46.46 vnc_intrinsic    joints=[  96.1   63.1   61.7   98.4]  total= 428
+  t= 46.57 vnc_intrinsic    joints=[  96.4   63.1   61.8   98.3]  total= 441
+  t= 46.67 vnc_intrinsic    joints=[  96.2   63.1   61.7   98.3]  total= 306
+  t= 46.77 vnc_intrinsic    joints=[  95.9   63.1   61.6   98.3]  total= 418
+t= 46.78  end
+  t= 46.88 idle             joints=[  95.8   62.9   61.5   98.2]  total= 428
+  t= 46.98 idle             joints=[  95.9   63.1   61.6   98.1]  total= 368
+  t= 47.08 idle             joints=[  95.9   62.9   61.6   98.2]  total= 271
+  t= 47.19 idle             joints=[  95.8   62.9   61.6   98.2]  total= 460
+  t= 47.29 idle             joints=[  95.9   63.0   61.5   98.2]  total= 396
+t= 47.31  POKE # 61  thermo_cool      drive=0.58 dur=0.28
+  t= 47.39 thermo_cool      joints=[  96.0   63.0   61.5   98.2]  total= 399
+  t= 47.49 thermo_cool      joints=[  96.1   62.9   61.8   98.2]  total=2295
+t= 47.59  end
+  t= 47.60 idle             joints=[  96.0   62.7   62.6   98.3]  total=3367
+  t= 47.71 idle             joints=[  96.2   62.7   63.5   98.4]  total=3426
+  t= 47.81 idle             joints=[  96.4   62.5   64.3   98.5]  total=3325
+t= 47.85  POKE # 62  bristle_SNta20   drive=0.59 dur=0.12
+  t= 47.92 bristle_SNta20   joints=[  96.2   62.2   65.0   98.5]  total=3409
+t= 47.98  end
+t= 47.99  TRIP #6  -- resetting
+[body] baseline DN rates: [2. 0. 0. 1.]
+t= 50.45  POKE # 63  bristle_SNta29   drive=0.67 dur=0.36
+  t= 50.45 bristle_SNta29   joints=[  78.9   67.6   70.3   88.8]  total= 354
+  t= 50.56 bristle_SNta29   joints=[  52.1   99.9   99.6   58.0]  total= 213
+  t= 50.66 bristle_SNta29   joints=[  54.4  100.6  100.1   56.3]  total= 366
+  t= 50.76 bristle_SNta29   joints=[  55.0  100.1   99.7   55.6]  total= 437
+t= 50.83  end
+  t= 50.87 idle             joints=[  54.6  100.7   99.2   56.5]  total= 265
+  t= 50.97 idle             joints=[  55.7  100.2   99.6   57.2]  total= 354
+  t= 51.07 idle             joints=[  56.2  100.8  100.6   57.1]  total= 305
+t= 51.09  POKE # 64  DNpe008          drive=0.45 dur=0.23
+  t= 51.18 DNpe008          joints=[  56.1  101.5  100.4   57.4]  total= 507
+  t= 51.28 DNpe008          joints=[  56.2  101.9  100.5   57.6]  total= 389
+t= 51.33  end
+  t= 51.38 idle             joints=[  56.4  101.4  101.1   58.0]  total= 336
+  t= 51.48 idle             joints=[  56.2  101.3  101.4   58.3]  total= 396
+  t= 51.59 idle             joints=[  56.6  101.9  101.5   58.6]  total= 352
+  t= 51.69 idle             joints=[  56.7  102.2  101.8   58.5]  total= 444
+  t= 51.79 idle             joints=[  56.8  102.3  101.7   58.7]  total= 421
+  t= 51.89 idle             joints=[  56.6  102.8  102.0   58.9]  total= 326
+t= 51.90  POKE # 65  bristle_SNta37   drive=0.60 dur=0.35
+  t= 52.00 bristle_SNta37   joints=[  56.5  102.8  102.0   59.0]  total= 288
+  t= 52.10 bristle_SNta37   joints=[  56.6  102.7  101.9   59.0]  total= 331
+  t= 52.21 bristle_SNta37   joints=[  56.6  102.6  101.9   59.0]  total= 485
+t= 52.26  end
+  t= 52.31 idle             joints=[  56.6  102.9  102.0   58.9]  total= 290
+t= 52.40  POKE # 66  haltere_R        drive=0.67 dur=0.32
+  t= 52.41 haltere_R        joints=[  56.6  102.6  101.9   58.9]  total= 400
+  t= 52.51 haltere_R        joints=[  56.8  102.8  102.1   58.9]  total= 434
+  t= 52.62 haltere_R        joints=[  56.8  103.0  102.1   58.8]  total= 382
+  t= 52.72 haltere_R        joints=[  57.0  103.0  102.2   58.8]  total= 378
+t= 52.73  end
+  t= 52.82 idle             joints=[  57.2  103.0  102.1   58.8]  total= 428
+  t= 52.93 idle             joints=[  57.1  103.1  102.3   58.9]  total= 503
+  t= 53.03 idle             joints=[  57.4  103.3  102.3   58.9]  total= 397
+  t= 53.13 idle             joints=[  57.5  103.2  102.4   59.0]  total= 309
+t= 53.18  POKE # 67  DNg08            drive=0.33 dur=0.16
+  t= 53.24 DNg08            joints=[  57.6  103.2  102.3   59.1]  total= 320
+t= 53.34  end
+  t= 53.34 idle             joints=[  57.5  103.1  102.3   59.0]  total= 366
+  t= 53.44 idle             joints=[  57.4  103.2  102.3   59.1]  total= 444
+t= 53.53  POKE # 68  visual_R         drive=0.51 dur=0.26
+  t= 53.55 visual_R         joints=[  57.4  103.2  102.3   59.1]  total= 382
+  t= 53.65 visual_R         joints=[  57.3  103.1  102.3   59.1]  total= 356
+  t= 53.76 visual_R         joints=[  57.1  103.1  102.3   59.1]  total= 352
+t= 53.79  end
+  t= 53.86 idle             joints=[  57.0  103.2  102.2   59.0]  total= 396
+t= 53.96  POKE # 69  tactile          drive=0.64 dur=0.32
+  t= 53.96 tactile          joints=[  57.0  103.2  102.2   59.0]  total= 324
+  t= 54.07 tactile          joints=[  57.0  103.3  102.4   59.0]  total= 362
+  t= 54.17 tactile          joints=[  57.0  103.2  102.3   59.0]  total= 472
+  t= 54.27 tactile          joints=[  57.0  103.2  102.3   59.0]  total= 389
+t= 54.29  end
+  t= 54.38 idle             joints=[  57.0  103.1  102.4   59.0]  total= 375
+  t= 54.48 idle             joints=[  57.1  103.1  102.4   59.0]  total= 310
+  t= 54.58 idle             joints=[  57.1  103.2  102.4   59.0]  total= 353
+  t= 54.69 idle             joints=[  57.0  103.3  102.4   59.0]  total= 367
+t= 54.76  POKE # 70  bristle_SNta38   drive=0.55 dur=0.32
+  t= 54.79 bristle_SNta38   joints=[  57.1  103.4  102.4   58.9]  total= 486
+  t= 54.89 bristle_SNta38   joints=[  57.1  103.4  102.4   58.9]  total= 344
+  t= 55.00 bristle_SNta38   joints=[  57.1  103.4  102.3   58.8]  total= 368
+t= 55.08  end
+  t= 55.10 idle             joints=[  57.1  103.4  102.4   58.8]  total= 579
+  t= 55.21 idle             joints=[  57.1  103.4  102.3   58.9]  total= 399
+  t= 55.31 idle             joints=[  57.1  103.3  102.3   58.9]  total= 419
+  t= 55.41 idle             joints=[  57.1  103.3  102.4   58.8]  total= 425
+t= 55.52  POKE # 71  visual_L         drive=0.30 dur=0.12
+  t= 55.52 visual_L         joints=[  57.2  103.3  102.4   58.8]  total= 354
+  t= 55.62 visual_L         joints=[  57.3  103.3  102.4   58.8]  total= 367
+t= 55.64  end
+  t= 55.72 idle             joints=[  57.3  103.3  102.5   58.9]  total= 442
+  t= 55.82 idle             joints=[  57.3  103.4  102.6   58.9]  total= 321
+  t= 55.93 idle             joints=[  57.4  103.5  102.7   59.1]  total= 351
+  t= 56.03 idle             joints=[  57.5  103.5  102.8   59.1]  total= 354
+t= 56.10  POKE # 72  bristle_SNta20   drive=0.53 dur=0.31
+  t= 56.14 bristle_SNta20   joints=[  57.4  103.6  102.7   59.1]  total= 211
+  t= 56.24 bristle_SNta20   joints=[  57.2  103.6  102.6   59.1]  total= 351
+  t= 56.34 bristle_SNta20   joints=[  57.1  103.6  102.6   59.0]  total= 295
+t= 56.41  end
+  t= 56.45 idle             joints=[  57.1  103.5  102.7   59.1]  total= 430
+t= 56.55  POKE # 73  haltere_R        drive=0.55 dur=0.23
+  t= 56.55 haltere_R        joints=[  57.2  103.7  102.6   59.0]  total= 493
+  t= 56.65 haltere_R        joints=[  57.3  103.8  102.5   59.0]  total= 333
+  t= 56.76 haltere_R        joints=[  57.4  103.9  102.6   59.0]  total= 350
+t= 56.79  end
+  t= 56.86 idle             joints=[  57.4  103.8  102.6   59.1]  total= 449
+  t= 56.96 idle             joints=[  57.5  103.9  102.7   59.1]  total= 315
+  t= 57.07 idle             joints=[  57.8  103.8  102.6   59.1]  total= 400
+  t= 57.17 idle             joints=[  57.9  103.8  102.6   59.1]  total= 397
+t= 57.22  POKE # 74  DNg08            drive=0.64 dur=0.31
+  t= 57.27 DNg08            joints=[  57.9  103.9  102.6   59.1]  total= 315
+  t= 57.38 DNg08            joints=[  58.1  104.0  102.7   59.1]  total= 307
+  t= 57.48 DNg08            joints=[  58.0  103.9  102.6   59.1]  total= 400
+t= 57.53  end
+  t= 57.58 idle             joints=[  58.1  104.1  102.7   59.2]  total= 395
+  t= 57.69 idle             joints=[  58.0  104.1  102.7   59.2]  total= 275
+  t= 57.79 idle             joints=[  58.1  104.1  102.7   59.2]  total= 478
+  t= 57.89 idle             joints=[  57.9  104.1  102.7   59.3]  total= 373
+  t= 58.00 idle             joints=[  57.8  104.1  102.7   59.3]  total= 391
+t= 58.06  POKE # 75  tactile          drive=0.45 dur=0.13
+  t= 58.10 tactile          joints=[  58.0  104.0  102.5   59.2]  total= 339
+t= 58.19  end
+  t= 58.20 idle             joints=[  57.7  103.9  102.5   59.2]  total= 320
+  t= 58.31 idle             joints=[  57.7  104.0  102.4   59.2]  total= 291
+  t= 58.41 idle             joints=[  57.6  103.9  102.5   59.1]  total= 491
+  t= 58.52 idle             joints=[  57.5  103.9  102.4   59.2]  total= 397
+  t= 58.62 idle             joints=[  57.5  103.9  102.4   59.1]  total= 354
+  t= 58.72 idle             joints=[  57.4  103.8  102.3   59.2]  total= 399
+t= 58.78  POKE # 76  visual_L         drive=0.68 dur=0.36
+  t= 58.83 visual_L         joints=[  57.5  103.9  102.4   59.2]  total= 518
+  t= 58.93 visual_L         joints=[  57.7  103.9  102.3   59.2]  total= 248
+  t= 59.03 visual_L         joints=[  57.7  103.8  102.3   59.2]  total= 277
+  t= 59.13 visual_L         joints=[  57.8  103.7  102.3   59.3]  total= 228
+t= 59.14  end
+  t= 59.24 idle             joints=[  57.8  103.7  102.2   59.3]  total= 378
+  t= 59.34 idle             joints=[  57.9  103.8  102.3   59.3]  total= 391
+  t= 59.44 idle             joints=[  58.0  103.8  102.3   59.3]  total= 364
+  t= 59.55 idle             joints=[  58.0  103.8  102.2   59.3]  total= 344
+t= 59.65  POKE # 77  haltere_R        drive=0.32 dur=0.33
+  t= 59.65 haltere_R        joints=[  57.9  103.8  102.3   59.3]  total= 359
+  t= 59.75 haltere_R        joints=[  57.9  103.9  102.3   59.4]  total= 517
+  t= 59.86 haltere_R        joints=[  57.9  103.9  102.3   59.4]  total= 348
+  t= 59.96 haltere_R        joints=[  57.8  103.7  102.2   59.4]  total= 478
+t= 59.98  end
+  t= 60.07 idle             joints=[  57.7  103.7  102.3   59.4]  total= 342
+  t= 60.17 idle             joints=[  57.7  103.7  102.3   59.4]  total= 335
+  t= 60.27 idle             joints=[  57.7  103.8  102.3   59.4]  total= 360
+  t= 60.38 idle             joints=[  57.7  103.8  102.4   59.4]  total= 289
+t= 60.44  POKE # 78  ascending        drive=0.70 dur=0.16
+  t= 60.48 ascending        joints=[  57.7  103.9  102.5   59.4]  total= 438
+  t= 60.58 ascending        joints=[  57.6  103.9  102.3   59.5]  total= 379
+t= 60.60  end
+  t= 60.69 idle             joints=[  57.5  103.9  102.3   59.6]  total= 283
+  t= 60.79 idle             joints=[  57.5  103.9  102.3   59.6]  total= 319
+  t= 60.89 idle             joints=[  57.5  104.0  102.3   59.5]  total= 331
+  t= 60.99 idle             joints=[  57.6  104.1  102.3   59.5]  total= 466
+  t= 61.10 idle             joints=[  57.5  104.1  102.3   59.5]  total= 265
+t= 61.12  POKE # 79  thermo_hot       drive=0.39 dur=0.23
+  t= 61.20 thermo_hot       joints=[  57.4  104.1  102.2   59.5]  total= 313
+  t= 61.31 thermo_hot       joints=[  57.3  104.1  102.3   59.5]  total=1007
+t= 61.35  end
+  t= 61.41 idle             joints=[  57.5  104.1  102.7   59.6]  total=3043
+  t= 61.51 idle             joints=[  57.8  103.8  103.3   59.6]  total=3350
+  t= 61.61 idle             joints=[  57.8  103.8  103.9   59.7]  total=3415
+  t= 61.72 idle             joints=[  57.8  103.7  104.3   59.8]  total=3273
+  t= 61.83 idle             joints=[  57.7  103.6  105.0   59.8]  total=3437
+t= 61.89  TRIP #7  -- resetting
+[body] baseline DN rates: [2. 0. 0. 0.]
+t= 64.35  POKE # 80  haltere_L        drive=0.40 dur=0.22
+  t= 64.35 haltere_L        joints=[  48.1  116.7  110.3   65.8]  total= 242
+  t= 64.45 haltere_L        joints=[  44.0  111.3  105.4   96.0]  total= 377
+  t= 64.55 haltere_L        joints=[  50.4  104.0  104.6   99.6]  total= 381
+t= 64.57  end
+  t= 64.66 idle             joints=[  52.5  102.4  102.2   99.3]  total= 493
+  t= 64.76 idle             joints=[  54.5  103.3  102.3   99.4]  total= 340
+  t= 64.86 idle             joints=[  56.0  104.2  102.6   99.5]  total= 366
+  t= 64.97 idle             joints=[  56.0  103.6  102.0   99.8]  total= 370
+  t= 65.07 idle             joints=[  56.3  103.0  102.1   99.4]  total= 302
+t= 65.13  POKE # 81  vnc_intrinsic    drive=0.30 dur=0.23
+  t= 65.17 vnc_intrinsic    joints=[  56.1  103.0  101.8   99.3]  total= 303
+  t= 65.28 vnc_intrinsic    joints=[  56.1  102.9  101.7   99.2]  total= 372
+t= 65.37  end
+  t= 65.38 idle             joints=[  57.0  102.9  101.7   99.3]  total= 351
+  t= 65.49 idle             joints=[  57.6  102.6  101.8   99.2]  total= 377
+  t= 65.59 idle             joints=[  57.7  103.0  101.9   99.1]  total= 315
+  t= 65.69 idle             joints=[  57.7  102.5  102.2   99.1]  total= 394
+  t= 65.80 idle             joints=[  57.8  102.6  102.3   99.3]  total= 319
+t= 65.83  POKE # 82  DNpe008          drive=0.41 dur=0.17
+  t= 65.90 DNpe008          joints=[  57.6  102.9  102.4   99.2]  total= 337
+t= 66.00  end
+  t= 66.00 idle             joints=[  57.2  102.6  102.1   99.0]  total= 514
+  t= 66.11 idle             joints=[  57.0  102.9  102.1   99.1]  total= 328
+  t= 66.21 idle             joints=[  57.3  102.8  102.3   99.2]  total= 449
+t= 66.29  POKE # 83  thermo_hot       drive=0.44 dur=0.35
+  t= 66.32 thermo_hot       joints=[  57.5  103.0  102.3   99.2]  total= 407
+  t= 66.42 thermo_hot       joints=[  57.4  103.2  102.6   99.2]  total= 346
+  t= 66.52 thermo_hot       joints=[  57.5  103.2  102.6   99.3]  total= 269
+  t= 66.63 thermo_hot       joints=[  57.5  103.1  102.8   99.1]  total=2511
+t= 66.65  end
+  t= 66.73 idle             joints=[  57.7  102.7  104.0   99.1]  total=3399
+t= 66.76  POKE # 84  DNg08            drive=0.51 dur=0.37
+  t= 66.84 DNg08            joints=[  57.8  102.6  105.1   99.2]  total=3560
+  t= 66.94 DNg08            joints=[  57.9  102.6  105.9   99.2]  total=3429
+  t= 67.04 DNg08            joints=[  57.7  102.4  106.9   99.3]  total=3524
+t= 67.10  TRIP #8  -- resetting
+[body] baseline DN rates: [1. 0. 0. 0.]
+t= 69.58  POKE # 85  thermo_cool      drive=0.45 dur=0.14
+  t= 69.58 thermo_cool      joints=[  72.1   99.8  103.9   97.4]  total= 327
+  t= 69.69 thermo_cool      joints=[  91.2  104.2   98.7   94.1]  total= 438
+t= 69.73  end
+  t= 69.79 idle             joints=[  93.4  103.6  107.4   97.1]  total=2732
+  t= 69.89 idle             joints=[  96.0   99.1  115.1   98.6]  total=3211
+  t= 70.00 idle             joints=[  97.0   98.4  120.5   99.4]  total=3461
+  t= 70.10 idle             joints=[  96.8   98.1  123.2  100.2]  total=3539
+t= 70.15  POKE # 86  visual_L         drive=0.49 dur=0.13
+  t= 70.20 visual_L         joints=[  96.6   98.2  124.6  100.1]  total=3353
+t= 70.23  TRIP #9  -- resetting
+[body] baseline DN rates: [1. 0. 0. 0.]
+t= 72.53  POKE # 87  cb_intrinsic     drive=0.36 dur=0.19
+  t= 72.53 cb_intrinsic     joints=[  86.9  104.3  117.7   98.1]  total= 301
+  t= 72.63 cb_intrinsic     joints=[  90.9  102.8  101.2   96.2]  total= 477
+t= 72.72  end
+  t= 72.73 idle             joints=[  94.6  106.3  103.5   99.5]  total= 392
+  t= 72.84 idle             joints=[  97.2  105.3  103.6   98.7]  total= 379
+  t= 72.94 idle             joints=[  97.7  105.7  103.7   98.8]  total= 319
+  t= 73.05 idle             joints=[  98.4  104.0  103.1   98.7]  total= 347
+  t= 73.15 idle             joints=[  98.3  103.9  103.3   99.2]  total= 277
+t= 73.22  POKE # 88  bristle_SNta20   drive=0.60 dur=0.14
+  t= 73.25 bristle_SNta20   joints=[  97.8  103.3  103.5   98.6]  total= 333
+  t= 73.36 bristle_SNta20   joints=[  97.2  102.8  102.8   98.4]  total= 343
+t= 73.37  end
+  t= 73.46 idle             joints=[  96.5  102.9  102.3   98.2]  total= 330
+  t= 73.57 idle             joints=[  97.1  102.8  102.6   98.8]  total= 325
+  t= 73.67 idle             joints=[  97.2  103.2  102.6   98.9]  total= 413
+t= 73.77  POKE # 89  thermo_cool      drive=0.61 dur=0.29
+  t= 73.77 thermo_cool      joints=[  97.3  103.1  102.5   98.9]  total= 324
+  t= 73.88 thermo_cool      joints=[  97.5  103.2  102.8   99.1]  total= 363
+  t= 73.98 thermo_cool      joints=[  97.4  102.8  103.1   99.0]  total=1489
+t= 74.07  end
+  t= 74.09 idle             joints=[  97.8  102.6  104.4   99.1]  total=3198
+  t= 74.19 idle             joints=[  97.9  102.4  106.1   99.3]  total=3331
+  t= 74.30 idle             joints=[  98.1  102.0  107.6   99.3]  total=3356
+t= 74.33  POKE # 90  thermo_hot       drive=0.39 dur=0.16
+  t= 74.40 thermo_hot       joints=[  98.3  101.5  108.8   99.4]  total=3423
+t= 74.49  end
+t= 74.49  TRIP #10  -- resetting
+[body] baseline DN rates: [0. 0. 0. 1.]
+t= 76.83  POKE # 91  bristle_SNta37   drive=0.38 dur=0.23
+  t= 76.83 bristle_SNta37   joints=[ 104.5  107.1  105.7   89.6]  total= 339
+  t= 76.93 bristle_SNta37   joints=[ 132.5  101.7   95.5   55.0]  total= 313
+  t= 77.03 bristle_SNta37   joints=[ 133.8  101.9  100.0   55.8]  total= 435
+t= 77.06  end
+  t= 77.14 idle             joints=[ 135.6  101.3  100.8   57.5]  total= 393
+  t= 77.24 idle             joints=[ 135.5  101.7  100.4   58.0]  total= 358
+t= 77.30  POKE # 92  vnc_intrinsic    drive=0.33 dur=0.28
+  t= 77.34 vnc_intrinsic    joints=[ 134.7  101.6  100.0   57.9]  total= 182
+  t= 77.44 vnc_intrinsic    joints=[ 134.1  101.6   99.6   57.1]  total= 317
+  t= 77.54 vnc_intrinsic    joints=[ 133.7  102.0   99.9   57.5]  total= 305
+t= 77.59  end
+  t= 77.65 idle             joints=[ 133.6  101.9  100.2   57.6]  total= 331
+  t= 77.75 idle             joints=[ 134.0  102.2  100.2   57.6]  total= 407
+t= 77.80  POKE # 93  visual_R         drive=0.53 dur=0.20
+  t= 77.86 visual_R         joints=[ 134.5  102.2  100.4   57.6]  total= 309
+  t= 77.96 visual_R         joints=[ 134.1  102.4  100.2   57.6]  total= 395
+t= 78.00  end
+  t= 78.06 idle             joints=[ 133.9  102.4  100.3   57.7]  total= 345
+  t= 78.17 idle             joints=[ 134.1  102.4  100.4   57.8]  total= 266
+  t= 78.27 idle             joints=[ 134.3  102.6  100.5   57.9]  total= 382
+t= 78.37  POKE # 94  bristle_SNta37   drive=0.54 dur=0.21
+  t= 78.38 bristle_SNta37   joints=[ 134.8  102.8  101.0   58.2]  total= 357
+  t= 78.48 bristle_SNta37   joints=[ 135.0  103.0  101.1   58.1]  total= 310
+  t= 78.58 bristle_SNta37   joints=[ 135.1  103.2  101.0   58.4]  total= 484
+t= 78.59  end
+  t= 78.68 idle             joints=[ 135.4  103.2  101.2   58.5]  total= 284
+t= 78.76  POKE # 95  visual_R         drive=0.33 dur=0.24
+  t= 78.78 visual_R         joints=[ 135.4  103.1  101.2   58.4]  total= 204
+  t= 78.89 visual_R         joints=[ 135.5  102.9  101.2   58.4]  total= 373
+  t= 78.99 visual_R         joints=[ 135.8  102.9  101.1   58.5]  total= 620
+t= 79.01  end
+  t= 79.09 idle             joints=[ 136.0  103.1  101.4   58.7]  total= 335
+  t= 79.19 idle             joints=[ 136.2  103.0  101.3   58.7]  total= 257
+  t= 79.29 idle             joints=[ 136.2  103.0  101.2   58.7]  total= 304
+  t= 79.40 idle             joints=[ 136.1  103.0  101.2   58.5]  total= 257
+  t= 79.50 idle             joints=[ 135.8  102.9  101.1   58.5]  total= 464
+t= 79.53  POKE # 96  cb_intrinsic     drive=0.60 dur=0.13
+  t= 79.60 cb_intrinsic     joints=[ 135.7  102.9  101.2   58.7]  total= 325
+t= 79.67  end
+  t= 79.71 idle             joints=[ 135.7  102.5  101.1   58.7]  total= 350
+t= 79.77  POKE # 97  DNg08            drive=0.41 dur=0.18
+  t= 79.81 DNg08            joints=[ 135.7  102.6  101.1   58.6]  total= 550
+  t= 79.91 DNg08            joints=[ 135.9  102.7  101.2   58.7]  total= 344
+t= 79.96  end
+  t= 80.02 idle             joints=[ 136.0  102.7  101.3   58.8]  total= 287
+  t= 80.12 idle             joints=[ 136.0  102.6  101.2   58.7]  total= 300
+  t= 80.23 idle             joints=[ 135.9  102.5  101.2   58.7]  total= 238
+  t= 80.33 idle             joints=[ 135.8  102.6  101.1   58.7]  total= 349
+t= 80.35  POKE # 98  haltere_R        drive=0.58 dur=0.21
+  t= 80.43 haltere_R        joints=[ 136.0  102.6  101.1   58.7]  total= 378
+  t= 80.54 haltere_R        joints=[ 136.1  102.5  101.2   58.7]  total= 549
+t= 80.57  end
+  t= 80.64 idle             joints=[ 136.2  102.6  101.3   58.8]  total= 324
+  t= 80.75 idle             joints=[ 136.2  102.6  101.5   58.8]  total= 303
+t= 80.80  POKE # 99  DNg08            drive=0.68 dur=0.15
+  t= 80.85 DNg08            joints=[ 136.2  102.7  101.4   58.8]  total= 284
+t= 80.95  end
+  t= 80.96 idle             joints=[ 136.1  102.6  101.4   58.7]  total= 416
+  t= 81.06 idle             joints=[ 136.2  102.7  101.4   58.8]  total= 365
+  t= 81.17 idle             joints=[ 136.2  102.7  101.3   58.7]  total= 428
+t= 81.22  POKE #100  bristle_SNta38   drive=0.57 dur=0.25
+  t= 81.27 bristle_SNta38   joints=[ 136.3  102.8  101.4   58.8]  total= 421
+  t= 81.37 bristle_SNta38   joints=[ 136.2  102.8  101.4   58.8]  total= 499
+t= 81.47  end
+  t= 81.48 idle             joints=[ 136.2  102.8  101.5   58.8]  total= 408
+  t= 81.58 idle             joints=[ 136.2  102.8  101.5   58.7]  total= 377
+  t= 81.69 idle             joints=[ 136.3  102.8  101.4   58.7]  total= 510
+  t= 81.79 idle             joints=[ 136.3  102.8  101.5   58.8]  total= 594
+  t= 81.90 idle             joints=[ 136.4  102.9  101.5   58.7]  total= 345
+t= 81.93  POKE #101  haltere_R        drive=0.58 dur=0.30
+  t= 82.00 haltere_R        joints=[ 136.4  102.9  101.5   58.8]  total= 448
+  t= 82.11 haltere_R        joints=[ 136.5  103.0  101.5   59.0]  total= 333
+  t= 82.21 haltere_R        joints=[ 136.6  102.9  101.5   59.0]  total= 416
+t= 82.23  end
+  t= 82.31 idle             joints=[ 136.5  102.9  101.5   59.0]  total= 255
+  t= 82.42 idle             joints=[ 136.4  102.9  101.6   58.9]  total= 440
+  t= 82.52 idle             joints=[ 136.5  103.0  101.6   58.9]  total= 495
+  t= 82.62 idle             joints=[ 136.4  103.0  101.6   59.0]  total= 357
+t= 82.70  POKE #102  haltere_L        drive=0.49 dur=0.31
+  t= 82.73 haltere_L        joints=[ 136.5  102.9  101.6   58.9]  total= 490
+  t= 82.83 haltere_L        joints=[ 136.6  103.0  101.6   58.9]  total= 409
+  t= 82.94 haltere_L        joints=[ 136.5  102.9  101.6   58.9]  total= 568
+t= 83.01  end
+  t= 83.04 idle             joints=[ 136.6  102.9  101.6   58.9]  total= 358
+  t= 83.15 idle             joints=[ 136.7  102.9  101.7   59.0]  total= 372
+  t= 83.25 idle             joints=[ 136.8  102.9  101.8   59.0]  total= 204
+  t= 83.36 idle             joints=[ 136.9  103.0  101.7   58.9]  total= 326
+  t= 83.46 idle             joints=[ 136.9  103.0  101.7   59.0]  total= 453
+  t= 83.56 idle             joints=[ 136.8  102.8  101.5   59.0]  total= 446
+t= 83.57  POKE #103  vnc_intrinsic    drive=0.63 dur=0.31
+  t= 83.67 vnc_intrinsic    joints=[ 136.8  102.8  101.5   59.0]  total= 396
+  t= 83.77 vnc_intrinsic    joints=[ 136.7  102.6  101.6   59.0]  total= 317
+  t= 83.88 vnc_intrinsic    joints=[ 136.5  102.6  101.6   59.0]  total= 306
+t= 83.89  end
+  t= 83.98 idle             joints=[ 136.4  102.6  101.5   58.9]  total= 388
+  t= 84.09 idle             joints=[ 136.4  102.7  101.5   59.0]  total= 376
+  t= 84.19 idle             joints=[ 136.2  102.7  101.6   59.0]  total= 280
+  t= 84.29 idle             joints=[ 136.2  102.7  101.4   58.9]  total= 334
+t= 84.36  POKE #104  bristle_SNta38   drive=0.54 dur=0.23
+  t= 84.40 bristle_SNta38   joints=[ 136.1  102.7  101.5   58.9]  total= 290
+  t= 84.50 bristle_SNta38   joints=[ 136.0  102.7  101.6   58.9]  total= 354
+t= 84.59  end
+  t= 84.60 idle             joints=[ 136.1  102.8  101.6   59.0]  total= 278
+  t= 84.71 idle             joints=[ 136.2  102.8  101.6   59.0]  total= 409
+  t= 84.81 idle             joints=[ 136.3  102.7  101.5   59.0]  total= 266
+  t= 84.92 idle             joints=[ 136.4  103.0  101.6   58.9]  total= 393
+  t= 85.02 idle             joints=[ 136.5  103.0  101.7   59.0]  total= 478
+  t= 85.13 idle             joints=[ 136.4  103.0  101.6   58.9]  total= 415
+t= 85.19  POKE #105  ascending        drive=0.54 dur=0.24
+  t= 85.23 ascending        joints=[ 136.4  102.9  101.6   58.9]  total= 281
+  t= 85.33 ascending        joints=[ 136.5  103.0  101.6   59.0]  total= 326
+t= 85.44  end
+  t= 85.44 idle             joints=[ 136.5  103.0  101.6   59.0]  total= 419
+  t= 85.54 idle             joints=[ 136.7  102.9  101.8   59.0]  total= 370
+  t= 85.64 idle             joints=[ 136.6  103.0  101.7   59.0]  total= 301
+t= 85.66  POKE #106  bristle_SNta29   drive=0.57 dur=0.30
+  t= 85.75 bristle_SNta29   joints=[ 136.5  103.0  101.7   59.0]  total= 341
+  t= 85.85 bristle_SNta29   joints=[ 136.4  103.0  101.7   59.0]  total= 394
+t= 85.96  end
+  t= 85.96 idle             joints=[ 136.4  102.9  101.5   58.9]  total= 326
+  t= 86.06 idle             joints=[ 136.5  102.9  101.6   58.9]  total= 374
+t= 86.10  POKE #107  tactile          drive=0.46 dur=0.33
+  t= 86.17 tactile          joints=[ 136.7  103.1  101.7   58.9]  total= 381
+  t= 86.27 tactile          joints=[ 136.6  103.0  101.8   58.9]  total= 292
+  t= 86.37 tactile          joints=[ 136.7  103.0  101.9   58.9]  total= 342
+t= 86.45  end
+  t= 86.48 idle             joints=[ 136.6  103.0  101.8   58.9]  total= 338
+  t= 86.58 idle             joints=[ 136.5  102.9  101.7   58.9]  total= 395
+  t= 86.69 idle             joints=[ 136.4  102.9  101.6   58.9]  total= 352
+t= 86.72  POKE #108  bristle_SNta20   drive=0.38 dur=0.21
+  t= 86.79 bristle_SNta20   joints=[ 136.3  102.9  101.6   58.9]  total= 375
+  t= 86.89 bristle_SNta20   joints=[ 136.2  102.9  101.6   58.9]  total= 386
+t= 86.93  end
+  t= 87.00 idle             joints=[ 136.1  102.9  101.6   58.8]  total= 435
+  t= 87.10 idle             joints=[ 135.9  102.8  101.5   58.8]  total= 430
+  t= 87.20 idle             joints=[ 135.9  102.9  101.6   58.7]  total= 366
+  t= 87.31 idle             joints=[ 135.9  102.8  101.7   58.7]  total= 342
+t= 87.36  POKE #109  haltere_L        drive=0.43 dur=0.29
+  t= 87.41 haltere_L        joints=[ 135.9  102.9  101.7   58.7]  total= 328
+  t= 87.51 haltere_L        joints=[ 136.0  103.1  101.7   58.6]  total= 249
+  t= 87.62 haltere_L        joints=[ 136.0  103.1  101.7   58.6]  total= 323
+t= 87.66  end
+  t= 87.72 idle             joints=[ 136.0  103.0  101.6   58.6]  total= 308
+  t= 87.82 idle             joints=[ 136.2  103.0  101.8   58.7]  total= 431
+  t= 87.93 idle             joints=[ 136.1  103.0  101.9   58.8]  total= 431
+  t= 88.03 idle             joints=[ 136.2  103.1  101.8   58.8]  total= 310
+t= 88.05  POKE #110  haltere_L        drive=0.56 dur=0.16
+  t= 88.14 haltere_L        joints=[ 136.3  103.1  101.8   58.8]  total= 296
+t= 88.22  end
+  t= 88.24 idle             joints=[ 136.2  103.1  101.8   58.8]  total= 308
+t= 88.35  POKE #111  DNg08            drive=0.35 dur=0.11
+  t= 88.35 DNg08            joints=[ 136.3  103.1  101.8   58.8]  total= 406
+  t= 88.45 DNg08            joints=[ 136.4  103.1  101.8   58.8]  total= 364
+t= 88.47  end
+  t= 88.55 idle             joints=[ 136.3  103.2  102.0   58.8]  total= 530
+  t= 88.66 idle             joints=[ 136.3  103.1  102.1   58.7]  total= 329
+  t= 88.76 idle             joints=[ 136.3  103.1  102.2   58.6]  total= 300
+  t= 88.87 idle             joints=[ 136.4  103.2  102.1   58.6]  total= 321
+  t= 88.97 idle             joints=[ 136.5  103.3  102.2   58.6]  total= 425
+t= 88.99  POKE #112  bristle_SNta37   drive=0.66 dur=0.32
+  t= 89.08 bristle_SNta37   joints=[ 136.7  103.4  102.2   58.6]  total= 343
+  t= 89.18 bristle_SNta37   joints=[ 136.9  103.4  102.1   58.6]  total= 383
+  t= 89.29 bristle_SNta37   joints=[ 137.0  103.5  102.2   58.5]  total= 522
+t= 89.32  end
+  t= 89.39 idle             joints=[ 137.1  103.5  102.2   58.5]  total= 365
+  t= 89.49 idle             joints=[ 137.3  103.5  102.3   58.5]  total= 499
+  t= 89.60 idle             joints=[ 137.3  103.6  102.3   58.5]  total= 421
+t= 89.64  POKE #113  haltere_L        drive=0.31 dur=0.39
+  t= 89.70 haltere_L        joints=[ 137.4  103.6  102.2   58.5]  total= 393
+  t= 89.81 haltere_L        joints=[ 137.4  103.5  102.2   58.5]  total= 378
+  t= 89.91 haltere_L        joints=[ 137.4  103.6  102.3   58.5]  total= 385
+  t= 90.02 haltere_L        joints=[ 137.5  103.8  102.3   58.5]  total= 337
+t= 90.03  end
+  t= 90.12 idle             joints=[ 137.5  103.7  102.3   58.6]  total= 373
+t= 90.18  POKE #114  haltere_R        drive=0.35 dur=0.16
+  t= 90.23 haltere_R        joints=[ 137.5  103.8  102.4   58.7]  total= 334
+  t= 90.33 haltere_R        joints=[ 137.5  103.8  102.3   58.7]  total= 318
+t= 90.35  end
+  t= 90.43 idle             joints=[ 137.3  103.8  102.3   58.7]  total= 381
+  t= 90.54 idle             joints=[ 137.2  103.8  102.4   58.6]  total= 357
+  t= 90.64 idle             joints=[ 137.2  103.8  102.4   58.6]  total= 470
+t= 90.72  POKE #115  bristle_SNta38   drive=0.41 dur=0.24
+  t= 90.74 bristle_SNta38   joints=[ 137.2  103.7  102.3   58.6]  total= 320
+  t= 90.85 bristle_SNta38   joints=[ 137.1  103.8  102.3   58.7]  total= 461
+  t= 90.95 bristle_SNta38   joints=[ 137.3  103.8  102.4   58.7]  total= 414
+t= 90.96  end
+  t= 91.06 idle             joints=[ 137.3  103.9  102.4   58.7]  total= 295
+  t= 91.16 idle             joints=[ 137.3  103.9  102.4   58.7]  total= 291
+  t= 91.27 idle             joints=[ 137.3  104.0  102.4   58.7]  total= 342
+t= 91.37  POKE #116  thermo_cool      drive=0.37 dur=0.38
+  t= 91.37 thermo_cool      joints=[ 137.2  103.9  102.3   58.8]  total= 330
+  t= 91.48 thermo_cool      joints=[ 137.1  103.9  102.2   58.7]  total= 433
+  t= 91.58 thermo_cool      joints=[ 136.9  103.8  102.4   58.7]  total=2821
+  t= 91.68 thermo_cool      joints=[ 137.0  103.5  102.9   58.8]  total=3344
+t= 91.75  end
+  t= 91.79 idle             joints=[ 137.2  103.5  103.4   58.8]  total=3506
+  t= 91.90 idle             joints=[ 137.4  103.3  104.1   58.8]  total=3416
+t= 91.98  POKE #117  visual_R         drive=0.68 dur=0.16
+  t= 92.01 visual_R         joints=[ 137.6  103.3  104.8   58.9]  total=3421
+t= 92.08  TRIP #11  -- resetting
+[body] baseline DN rates: [3. 0. 0. 0.]
+t= 94.53  POKE #118  bristle_SNta20   drive=0.51 dur=0.20
+  t= 94.53 bristle_SNta20   joints=[ 104.1  100.6  102.2   65.2]  total= 386
+  t= 94.63 bristle_SNta20   joints=[  19.8  100.6  100.9   89.8]  total= 462
+t= 94.74  end
+  t= 94.74 idle             joints=[  19.5  105.0  103.9   95.2]  total= 358
+  t= 94.84 idle             joints=[  21.6  104.3  102.5   96.1]  total= 287
+  t= 94.95 idle             joints=[  20.9  104.1  102.7   96.3]  total= 325
+  t= 95.05 idle             joints=[  20.5  105.2  103.7   97.0]  total= 434
+t= 95.07  POKE #119  thermo_hot       drive=0.64 dur=0.17
+  t= 95.15 thermo_hot       joints=[  20.9  105.0  103.4   97.5]  total= 351
+t= 95.25  end
+  t= 95.26 idle             joints=[  19.6  104.2  103.6   97.5]  total= 813
+  t= 95.36 idle             joints=[  19.4  103.6  104.9   97.4]  total=3034
+  t= 95.47 idle             joints=[  19.8  103.5  108.0   97.9]  total=3373
+t= 95.56  POKE #120  DNg08            drive=0.55 dur=0.18
+  t= 95.58 DNg08            joints=[  19.9  102.7  111.2   98.3]  total=3407
+  t= 95.68 DNg08            joints=[  19.7  102.3  113.1   98.7]  total=3534
+t= 95.76  end
+t= 95.78  TRIP #12  -- resetting
+[body] baseline DN rates: [2. 0. 0. 0.]
+t= 98.07  POKE #121  thermo_cool      drive=0.34 dur=0.28
+  t= 98.07 thermo_cool      joints=[  33.5   99.3  109.9   97.2]  total= 305
+  t= 98.17 thermo_cool      joints=[  57.1   97.5  100.6   90.8]  total= 648
+  t= 98.27 thermo_cool      joints=[  57.6  100.8  106.1   94.0]  total=2859
+t= 98.35  end
+  t= 98.37 idle             joints=[  58.3   98.7  113.3   95.2]  total=3359
+  t= 98.48 idle             joints=[  60.1   98.0  120.2   97.2]  total=3506
+  t= 98.58 idle             joints=[  60.1   98.9  125.5   98.0]  total=3401
+  t= 98.68 idle             joints=[  59.8   97.7  127.4   98.6]  total=3536
+t= 98.71  TRIP #13  -- resetting
+[body] baseline DN rates: [1. 0. 0. 0.]
+t=100.95  POKE #122  bristle_SNta37   drive=0.70 dur=0.33
+  t=100.95 bristle_SNta37   joints=[  65.8   96.1  119.9  105.0]  total= 201
+  t=101.05 bristle_SNta37   joints=[  91.9  105.2  100.6  103.9]  total= 377
+  t=101.15 bristle_SNta37   joints=[  95.6  106.5  101.6  101.6]  total= 350
+  t=101.26 bristle_SNta37   joints=[  97.4  104.9  100.9  100.1]  total= 450
+t=101.30  end
+  t=101.36 idle             joints=[  97.1  103.8  100.5  100.1]  total= 400
+  t=101.46 idle             joints=[  97.2  103.7  100.2   99.7]  total= 313
+  t=101.56 idle             joints=[  97.3  103.7  100.4   99.7]  total= 311
+t=101.62  POKE #123  bristle_SNta38   drive=0.41 dur=0.35
+  t=101.66 bristle_SNta38   joints=[  97.2  103.6  101.3   99.9]  total= 314
+  t=101.76 bristle_SNta38   joints=[  96.8  103.9  101.1   99.5]  total= 386
+  t=101.87 bristle_SNta38   joints=[  96.4  103.9  101.3   99.4]  total= 378
+t=101.97  end
+  t=101.97 idle             joints=[  96.5  104.1  101.6   99.3]  total= 287
+  t=102.08 idle             joints=[  96.7  103.6  101.7   99.1]  total= 462
+  t=102.18 idle             joints=[  96.8  103.8  101.8   99.0]  total= 297
+  t=102.28 idle             joints=[  96.5  103.5  101.7   98.7]  total= 325
+
+Closed. Pokes: 123  Trips: 13
